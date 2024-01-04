@@ -1,0 +1,139 @@
+﻿@model IEnumerable<QuanLy.Models.NhanVien>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+<h1 style="text-align:center; color: #00BFFF; font-weight:800; font-size: 30px">DANH SÁCH NHÂN VIÊN</h1>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<link rel="stylesheet" href="~/adminlte-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="~/adminlte-3.2.0/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="~/adminlte-3.2.0/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+
+<div class="card card-outline card-primary">
+ 
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="NhanVien" class="table table-bordered table-striped display">
+            <thead>
+                <tr>
+                    <th>
+                        <label>Mã nhân viên</label>
+                        @*@Html.DisplayNameFor(model => model.TaiKhoanID)*@
+                    </th>
+                    <th>
+                        <label>Họ và tên </label>
+                        @*@Html.DisplayNameFor(model => model.TenNV)*@
+                    </th>
+                    <th>
+                        <label>Ngày sinh</label>
+                        @*@Html.DisplayNameFor(model => model.NgaySinh)*@
+                    </th>
+                    <th>
+                        <label>Giới tính </label>
+                        @*@Html.DisplayNameFor(model => model.GioiTinh)*@
+                    </th>
+                    <th>
+                        <label>Số điện thoại</label>
+                        @*@Html.DisplayNameFor(model => model.SDT)*@
+                    </th>
+                    <th>
+                        <label>Địa chỉ </label>
+                        @*@Html.DisplayNameFor(model => model.DiaChi)*@
+                    </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenNV)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NgaySinh)
+                        </td>
+                      
+                        @if(item.GioiTinh==true)
+                            {
+                                <td>
+                                    Nam
+                            </td>
+                        }
+                        else
+                        {
+                            <td>Nữ</td>
+                        }
+
+                        
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SDT)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                            <a asp-action="Delete" asp-route-id="@item.ID" onclick="return confirm('Bạn có muốn xóa không?')" >Delete </a>
+                            @*@Html.ActionLink("Delete", "Delete", new { id = item.ID })*@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
+
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+    Dropdown <span class="caret"></span>
+</a>
+<!-- DataTables  & Plugins -->
+<script src="~/adminlte-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/jszip/jszip.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="~/adminlte-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+
+
+<script>
+    $(function () {
+        $("#NhanVien").DataTable({
+            "responsive": true, "lengthChange": true, "autoWidth": true,
+            "paging": true,
+            "autoFill": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": true,
+            "rowReorder": true,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"],
+        }).buttons().container().appendTo('#nguoiDung_wrapper .col-md-6:eq(0)');
+
+    });
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });</script>
+
+

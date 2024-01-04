@@ -1,0 +1,87 @@
+﻿@model QuanLy.Models.TaiKhoan
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Hệ thống quản lý cửa hàng bách hóa  </title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/adminlte-3.2.0/plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="~/adminlte-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/adminlte-3.2.0/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                 <img style="height:200px; width:200px" src="~/adminlte-3.2.0/logo/y (4).png" />
+            </div>
+            <div class="card-body">
+                <p class="login-box-msg" style="color: #00B0FF; font-weight:bold; font-size: 20px"> ĐĂNG NHẬP VÀO HỆ THỐNG</p>
+
+                @using (Html.BeginForm("DangNhap", "TaiKhoans", FormMethod.Post))
+                {                                
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.UserName)
+                        @Html.TextBoxFor(model => model.UserName, "", new { @class = "form-control", @placeholder = "Ten nguoi dung" })
+
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Mat khau" })
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block" >Sign In</button>
+                        </div>
+                    </div>
+
+
+                    
+                }
+
+                <form action="~/adminlte-3.2.0/index3.html" method="post">
+                    
+                </form>
+
+                <!-- /.social-auth-links -->
+                <p class="mb-1">
+                    <a  asp-action="DangKy"> Dang ky </a>
+                </p>
+                
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery -->
+    <script src="~/adminlte-3.2.0/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/adminlte-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/adminlte-3.2.0/dist/js/adminlte.min.js"></script>
+</body>
+</html>

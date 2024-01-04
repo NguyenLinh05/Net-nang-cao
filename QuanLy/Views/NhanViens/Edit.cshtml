@@ -1,0 +1,96 @@
+﻿@model QuanLy.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+
+
+
+<form asp-action="Edit" enctype="multipart/form-data" style="position: absolute;left: 35%;
+      top: 10%;
+      height: 40%;
+      width:800px; padding-left: 3%; ">
+    @Html.AntiForgeryToken()
+    <div>
+        <div class="card card-primary">
+
+            <div class="card-header">
+                <h3 style="text-align:center; color: #00BFFF; font-weight:800; font-size: 30px">SỬA THÔNG TIN NHHÂN VIÊN</h3>
+            </div>
+            <div class="form-horizontal">
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="ID" />
+                <div style="display: flex">
+                    <div class="form-group" style="margin-left:7%; width: 30%">
+                        <img class="square" src="http://localhost:8080/@Model.Anh" style="width: 200px; height:300px" />
+                        <input asp-for="Anh" class="form-control" type="hidden" />
+                        <input type="file" name="file" class="form-control" style="width:200px" />
+                    </div>
+
+                    <div id="right" style="width:70%">
+                        <div class="form-group" style="margin-left:7%">
+                            <div class="col-md-10">
+                                <label>Ten tài khoản:</label>
+                                <input type="text" class="form-control float-right" asp-for="TaiKhoanID" />
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-left:7%">
+                            <div class="col-md-10">
+                                <label>Tên nhân viên:</label>
+                                <input asp-for="TenNV" class="form-control" />
+                                <span asp-validation-for="TenNV" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-left:7%; width:375px">
+                            
+                                <label>Ngày sinh:</label>
+                                <input type="date" class="form-control float-right" name="NgaySinh" value="@Model.NgaySinh.ToString("yyyy-MM-dd")" />
+                           
+                        </div>
+                        <div class="form-group" style="margin-left:7%">
+                            <div class="col-md-10">
+                                <label>Giới tính:</label>
+                                Nam @Html.RadioButton("GioiTinh","True")
+                                Nữ @Html.RadioButton("GioiTinh","False")
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-left:7%">
+                            <div class="col-md-10">
+                                <label>Số điện thoại:</label>
+                                <input asp-for="SDT" class="form-control" />
+                                <span asp-validation-for="SDT" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-left:7%">
+                            <div class="col-md-10">
+                                <label>Địa chỉ:</label>
+                                <input asp-for="DiaChi" class="form-control" />
+                                <span asp-validation-for="DiaChi" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group; col-md-12" style="padding-bottom: 3%; padding-left: 45px;">
+                            <input type="submit" value="Save" class="btn btn-primary" />
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                
+
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</form>
+
+
+
+

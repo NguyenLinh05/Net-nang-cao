@@ -1,0 +1,102 @@
+﻿@model QuanLy.Models.HoaDonNhap
+
+@{
+    ViewData["Title"] = "Edit";
+    CTHDN ct = (CTHDN)ViewData["ChiTiet"];
+    List<NhanVien> listnv = (List<NhanVien>)ViewData["NhanVien"];
+    List<NhaCC> listncc = (List<NhaCC>)ViewData["NhaCungCap"];
+    List<LoaiHang> listlh = (List<LoaiHang>)ViewData["LoaiHang"];
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>HoaDonNhap</h4>
+<hr />
+<form asp-action="Edit">
+    <div class="col-md-4">
+        <div class="card card-primary">
+
+            <div class="card-header">
+                <h3 class="card-title">Details</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>ID:</label>
+                    <input type="text" class="form-control float-right" name="ID" value="@Model.ID" readonly/>
+                </div>
+                <div class="form-group">
+                    <label>Ngay nhap:</label>
+                    <input type="date" class="form-control float-right" name="NgayNhap" value="@Model.NgayNhap.ToString("yyyy-MM-dd")" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Ten Nhan Vien</label>
+                    <select name="NhanVien">
+                        @foreach (NhanVien nv in listnv)
+                        {
+                            if(nv.TenNV == Model.NhanVien.TenNV)
+                            {
+                                <option value="@nv.ID" selected>@nv.TenNV</option>
+                            }
+                            else
+                            {
+                                <option value="@nv.ID">@nv.TenNV</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="NhanVienID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>So luong:</label>
+                    <input type="text" class="form-control float-right" name="SoLuong" value="@ct.SoLuong" />
+                </div>
+                <div class="form-group">
+                    <label>Don gia:</label>
+                    <input type="text" class="form-control float-right" name="DonGia" value="@ct.DonGia" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Ten Nha Cung Cap</label>
+                    <select name="NhaCungCap">
+                        @foreach (NhaCC ncc in listncc)
+                        {
+                            if (ncc.TenNCC == ct.NhaCC.TenNCC)
+                            {
+                                <option value="@ncc.ID" selected>@ncc.TenNCC</option>
+                            }
+                            else
+                            {
+                                <option value="@ncc.ID">@ncc.TenNCC</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="NhanVienID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Loai Hang</label>
+                    <select name="LoaiHang">
+                        @foreach (LoaiHang lh in listlh)
+                        {
+                            if (lh.TenLH == ct.LoaiHang.TenLH)
+                            {
+                                <option value="@lh.ID" selected>@lh.TenLH</option>
+                            }
+                            else
+                            {
+                                <option value="@lh.ID">@lh.TenLH</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="NhanVienID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Edit" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

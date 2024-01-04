@@ -1,0 +1,57 @@
+﻿@model QuanLy.Models.TaiKhoan
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="col-md-4">
+        <div class="card card-primary">
+
+            <div class="card-header">
+                <h3 class="card-title">Thêm tài khoản</h3>
+            </div>
+
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Tên tài khoản: </label>
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Mật khẩu: </label>
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <label>Quyền nhân viên: </label>
+                        @Html.EditorFor(model => model.Quyen, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Quyen, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" name="Đăng ký" value="DangKy" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

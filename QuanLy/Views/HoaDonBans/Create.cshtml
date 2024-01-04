@@ -1,0 +1,63 @@
+﻿@model QuanLy.Models.HoaDonBan
+
+@{
+    ViewData["Title"] = "Create";
+    List<NhanVien> listnv = (List<NhanVien>)ViewData["NhanVien"];
+    List<SanPham> listsp = (List<SanPham>)ViewData["SanPham"];
+
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>HoaDonBan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NgayBan" class="control-label"></label>
+                <input asp-for="NgayBan" class="form-control" />
+                <span asp-validation-for="NgayBan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Ten Nhan Vien</label>
+                <select name="NhanVien">
+                    @foreach (NhanVien nv in listnv)
+                    {
+                        <option value="@nv.ID">@nv.TenNV</option>
+                    }
+                </select>
+                <span asp-validation-for="NhanVienID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">So Luong</label>
+                <input type="text" name="SoLuong" />
+                <span asp-validation-for="NhanVienID" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="control-label">Ten san pham</label>
+                <select name="SanPham">
+                    @foreach (SanPham sp in listsp)
+                    {
+                        <option value="@sp.ID">@sp.TenSP</option>
+                    }
+                </select>
+                <span asp-validation-for="NhanVienID" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,53 @@
+﻿@model QuanLy.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="col-md-4">
+        <div class="card card-primary">
+
+            <div class="card-header">
+                <h3 class="card-title">Details</h3>
+            </div>
+            <div class="card-body">
+
+                 <div class="form-group">
+                    <label>Mã tài khoản:</label>
+                    <input type="text" class="form-control float-right" name="ID" value="@Model.TaiKhoanID" />
+                </div>
+
+                <div class="form-group">
+                    <label>Mã nhân viên:</label>
+                    <input type="text" class="form-control float-right" name="NhanVienID" value="@Model.ID" />
+                </div>
+
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input type="text" class="form-control float-right" name="TenNV" value="@Model.TenNV" />
+                </div>
+
+                <div class="form-group">
+                    <label>Mật khẩu:</label>
+                    <input type="text" class="form-control float-right" name="Password" value="@Model.TaiKhoan.Password" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+
+
+<div>
+    <div class="form-group; col-md-12">
+        <input type="submit" name="Edit" value="Edit" class="btn btn-primary" />
+    </div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,79 @@
+﻿@model QuanLy.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ViewAdmin.cshtml";
+}
+
+<form asp-action="Edit" enctype="multipart/form-data" style="position: absolute;left: 35%;
+      top: 10%;
+      height: 40%;
+      width:800px; padding-left: 3%; ">
+    @Html.AntiForgeryToken()
+
+    <div class="card card-primary">
+
+        <div class="card-header">
+            <h3 class="card-title; align-middle">THÔNG TIN CHI TIẾT NHHÂN VIÊN</h3>
+        </div>
+
+
+        <div class="card-body" style="display:flex">
+
+            <td style="margin-left:7%; width: 30%">
+                <img class="square" src="http://localhost:8080/@Model.Anh" style="width: 200px; height:300px" />
+            </td>
+
+            <div style="width:70%">
+                <div class="form-group" style="margin-left:7%">
+                    <label>Mã nhân viên:</label>
+                    <input type="text" class="form-control float-right" name="ID" value="@Model.ID" />
+                </div>
+
+                <div class="form-group" style="margin-left:7%">
+                    <label>Mã tài khoản:</label>
+                    <input type="text" class="form-control float-right" name="TaiKhoanID" value="@Model.TaiKhoanID" />
+                </div>
+
+                <div class="form-group" style="margin-left:7%">
+                    <label>Họ và tên:</label>
+                    <input type="text" class="form-control float-right" name="TenNV" value="@Model.TenNV" />
+                </div>
+
+                <div class="form-group" style="margin-left:7%">
+                    <label>Ngày sinh:</label>
+                    <input type="text" class="form-control float-right" name="NgaySinh" value="@Model.NgaySinh" />
+                </div>
+
+
+                <div class="form-group" style="margin-left:7%">
+                    <div class="col-md-10">
+                        <label>Giới tính:</label>
+                        Nam @Html.RadioButton("GioiTinh","True")
+                        Nữ @Html.RadioButton("GioiTinh","False")
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-left:7%">
+                    <label>Số điện thoại:</label>
+                    <input type="text" class="form-control float-right" name="SDT" value="@Model.SDT" />
+                </div>
+
+                <div class="form-group" style="margin-left:7%">
+                    <label>Địa chỉ:</label>
+                    <input type="text" class="form-control float-right" name="DiaChi" value="@Model.DiaChi" />
+                </div>
+
+            </div>
+
+        </div>
+        <div style="padding-bottom: 3%; padding-left: 45px;">
+            <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+
+</form>
+
+
+

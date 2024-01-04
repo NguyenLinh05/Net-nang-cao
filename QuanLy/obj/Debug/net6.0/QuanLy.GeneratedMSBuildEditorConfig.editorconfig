@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QuanLy
+build_property.RootNamespace = QuanLy
+build_property.ProjectDir = H:\My Drive\năm 3\Kì 2\.Net nâng cao\BTL\QuanLy\QuanLy\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = H:\My Drive\năm 3\Kì 2\.Net nâng cao\BTL\QuanLy\QuanLy
+build_property._RazorSourceGeneratorDebug = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonBans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonBans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonBans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonBans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonBans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonNhaps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonNhaps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonNhaps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonNhaps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/HoaDonNhaps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/NhanViens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/NhanViens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/NhanViens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/NhanViens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/NhanViens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/Shared/_ViewAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/TaiKhoans/DangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXERhbmdLeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/TaiKhoans/DangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXERhbmdOaGFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/TaiKhoans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/TaiKhoans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/TaiKhoans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/TaiKhoans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/My Drive/năm 3/Kì 2/.Net nâng cao/BTL/QuanLy/QuanLy/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ug5f0qekja

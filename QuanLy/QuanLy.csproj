@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\AdminLTE-3.2.0\.git\sourcetreeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.16" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\codeql\codeql-config.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\dependabot.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3.1-x.md" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v4-x.md" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\ci.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\codeql.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\docs.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.github\workflows\lint.yml" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\config" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\description" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\HEAD" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\hooks\update.sample" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\index" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\info\exclude" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\logs\HEAD" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\logs\refs\heads\master" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\objects\pack\pack-5f36e7d8a943ee83246c85624088be91623827ad.idx" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\objects\pack\pack-5f36e7d8a943ee83246c85624088be91623827ad.pack" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\packed-refs" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\refs\heads\master" />
+    <None Include="wwwroot\AdminLTE-3.2.0\.git\refs\remotes\origin\HEAD" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Data\" />
+    <Folder Include="wwwroot\AdminLTE-3.2.0\.git\objects\info\" />
+    <Folder Include="wwwroot\AdminLTE-3.2.0\.git\refs\tags\" />
+  </ItemGroup>
+
+</Project>
